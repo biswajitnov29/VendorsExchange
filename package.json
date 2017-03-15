@@ -1,0 +1,36 @@
+{
+  "name": "vendorsexchange",
+  "version": "1.0.0",
+  "description": "verdor exchange coins",
+  "main": "main.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biswajitnov29/VendorsExchange.git"
+  },
+  "keywords": [
+    "vendor"
+  ],
+  "author": "Biswajit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/biswajitnov29/VendorsExchange/issues"
+  },
+  "homepage": "https://github.com/biswajitnov29/VendorsExchange#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-jshint": "^2.0.4",
+    "gulp-less": "^3.3.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-uglify": "^2.1.0",
+    "gulp-util": "^3.0.8",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1"
+  }
+}
