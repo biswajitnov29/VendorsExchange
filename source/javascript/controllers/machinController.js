@@ -8,7 +8,7 @@ angular.module("VenderMachinApp").controller("MachinController", ["$scope", "Cal
     $scope.calculateVenderChange = function () {
 
         $scope.venderChange = [];
-        var promise = CalculationService.calculateCoins($scope.amount);
+        var promise = CalculationService.calculateCoins($scope.amount,true);
         promise.then(function (data) {
             $scope.error = false;
             $scope.venderChange = data;
@@ -18,6 +18,19 @@ angular.module("VenderMachinApp").controller("MachinController", ["$scope", "Cal
         });
 
         $scope.InventoryStock = CalculationService.getInventoryStock();
+    };
+    
+    $scope.calculateVenderChangeUnlimited = function () {
+
+        $scope.venderChange = [];
+        var promise = CalculationService.calculateCoins($scope.amount,false);
+        promise.then(function (data) {
+            $scope.error = false;
+            $scope.venderChange = data;
+
+        }, function () {
+            $scope.error = true;
+        });
     };
 
 }]);

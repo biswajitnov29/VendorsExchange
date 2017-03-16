@@ -1,0 +1,25 @@
+<form style="padding:20px;">
+    <div class="form-group">
+        <label for="amount">Amount:</label>
+        <input type="number" class="form-control" id="amount" ng-model="amount">
+    </div>
+    <button type="submit" class="btn btn-default" ng-click="calculateVenderChangeUnlimited()">Submit</button>
+</form>
+<h3>Changes </h3>
+
+<table ng-if="!error">
+    <thead>
+        <tr>
+            <th ng-repeat="x in venderChange" ng-bind="x.name"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td ng-repeat="x in venderChange" ng-bind="x.quantity"></td>
+        </tr>
+    </tbody>
+</table>
+
+<div ng-if="error">
+    <span class="text-error">Change not available</span>
+</div>

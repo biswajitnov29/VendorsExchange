@@ -30,6 +30,8 @@ angular.module("VenderMachinApp").factory("InventoryFactory", [function () {
             quantity: 23,
         }
     ];
-    return venderStorage;
+    return function(){
+        return venderStorage;
+    };
 
 }]);

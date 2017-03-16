@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "verdor exchange coins",
   "main": "./../main.html",
-    "start": "http-server -a localhost -p 8000",
+  "start": "http-server -a localhost -p 8000",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,6 +21,9 @@
   },
   "homepage": "https://github.com/biswajitnov29/VendorsExchange#readme",
   "devDependencies": {
+    "angular": "^1.6.3",
+    "angular-mocks": "^1.6.3",
+    "angular-ui-router": "^0.4.2",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.1.7",
@@ -32,8 +35,13 @@
     "gulp-uglify": "^2.1.0",
     "gulp-util": "^3.0.8",
     "http-server": "^0.9.0",
+    "jasmine-core": "^2.5.2",
     "jitsu": "^0.15.0",
     "jshint": "^2.9.4",
-    "jshint-stylish": "^2.2.1"
+    "jshint-stylish": "^2.2.1",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-spec-reporter": "0.0.30"
   }
 }
